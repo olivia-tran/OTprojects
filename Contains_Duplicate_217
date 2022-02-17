@@ -1,0 +1,8 @@
+#Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+def return_true_if_duplicate(nums):
+    """takes a list of integers, returns true if there is a value repeated at least twice"""
+    nums_set = set(nums)
+    if len(nums) - len(nums_set) != 0:
+        return True
+    return False
+print(return_true_if_duplicate([2, 3, 4, 4, 3, 5, 5]))
