@@ -1,0 +1,9 @@
+def find_largest_num(nums):
+    #iterate through a list, get the first number and compare each element to the first, the larger is the result
+    largest_num = 0
+    for num in nums:
+        if num >= largest_num:
+            largest_num = num
+    return largest_num
+
+print(f"The largest number is {find_largest_num([12, 16, 25, 100, 150])}")
